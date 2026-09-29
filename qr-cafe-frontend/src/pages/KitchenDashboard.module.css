@@ -1,0 +1,269 @@
+.page {
+  min-height: 100vh;
+  background-color: #F8F9FA;
+  padding-bottom: 60px;
+}
+
+.audioBanner {
+  background: linear-gradient(90deg, #E63946, #F4A261);
+  color: white;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.unlockBtn {
+  background: white;
+  color: var(--primary-dark);
+  font-weight: 800;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.topControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.controlActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.installBtn {
+  background: #10B981;
+  color: white;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 800;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+.installBtn:hover {
+  background: #059669;
+}
+
+.testSoundBtn {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+}
+
+.testSoundBtn:hover {
+  background: #DBEAFE;
+}
+
+.soundBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  box-shadow: var(--shadow-sm);
+}
+
+.soundActive {
+  background: #ECFDF5;
+  color: #065F46;
+  border-color: #A7F3D0;
+}
+
+.refreshBtn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+
+.refreshBtn:hover {
+  background: var(--surface);
+}
+
+/* Metrics */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.metricCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.metricCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.metricActive {
+  border-color: var(--primary);
+  background: #FFF9FA;
+}
+
+.metricLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.metricValue {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-top: 2px;
+}
+
+.valPlaced {
+  color: #D97706;
+}
+
+.valPreparing {
+  color: #2563EB;
+}
+
+.valReady {
+  color: #059669;
+}
+
+.valRevenue {
+  color: var(--text);
+}
+
+.metricIcon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+/* Tabs */
+.tabsWrapper {
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.tabBtn {
+  white-space: nowrap;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  background: var(--card-bg);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+}
+
+.tabActive {
+  background: #1F2937;
+  color: white;
+  border-color: #1F2937;
+}
+
+/* Orders Grid */
+.ordersGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.emptyState {
+  background: var(--card-bg);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.emptyIcon {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.emptyState h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.emptyState p {
+  font-size: 0.85rem;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3.5px solid #E5E7EB;
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 12px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

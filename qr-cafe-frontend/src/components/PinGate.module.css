@@ -1,0 +1,233 @@
+.lockScreen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  border-radius: var(--radius-lg);
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.25s ease-out;
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  background: #FFF0F2;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+  box-shadow: 0 4px 10px rgba(230, 57, 70, 0.15);
+}
+
+.lockIcon {
+  font-size: 1.8rem;
+}
+
+.title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* PIN Dots */
+.pinDisplay {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.pinDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #D1D5DB;
+  background: transparent;
+  transition: all 0.15s ease;
+}
+
+.dotFilled {
+  border-color: var(--primary);
+  background: var(--primary);
+  transform: scale(1.15);
+  box-shadow: 0 0 8px rgba(230, 57, 70, 0.4);
+}
+
+.errorAlert {
+  background: var(--danger-bg);
+  border: 1px solid #FECACA;
+  color: var(--danger);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Keypad */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.keyBtn {
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: var(--radius-md);
+  padding: 14px 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.keyBtn:hover:not(:disabled) {
+  background: #F3F4F6;
+  border-color: #D1D5DB;
+  transform: translateY(-1px);
+}
+
+.keyBtn:active:not(:disabled) {
+  transform: scale(0.96);
+  background: #E5E7EB;
+}
+
+.funcBtn {
+  background: #F3F4F6;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.unlockBtn {
+  width: 100%;
+  padding: 13px;
+  background: var(--primary);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(230, 57, 70, 0.35);
+  transition: all 0.2s;
+  margin-bottom: 14px;
+}
+
+.unlockBtn:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+
+.unlockBtn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.pinHintBox {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: #92400E;
+  margin-bottom: 14px;
+}
+
+.footerLink {
+  margin-top: 6px;
+}
+
+.backLink {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.backLink:hover {
+  color: var(--primary);
+}
+
+/* Authorized Strip */
+.authorizedWrapper {
+  min-height: 100vh;
+}
+
+.staffControlStrip {
+  background: #111827;
+  color: #E5E7EB;
+  padding: 8px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #374151;
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+.staffInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lockStatusIcon {
+  font-size: 0.9rem;
+}
+
+.staffRoleText strong {
+  color: #F59E0B;
+}
+
+.staffActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.switchLink {
+  color: #9CA3AF;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+.switchLink:hover {
+  color: white;
+}
+
+.lockBtn {
+  background: rgba(239, 68, 68, 0.15);
+  color: #F87171;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.lockBtn:hover {
+  background: #EF4444;
+  color: white;
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BA181B" />
+      <stop offset="50%" stop-color="#E63946" />
+      <stop offset="100%" stop-color="#F4A261" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="110" fill="url(#grad)" />
+  <circle cx="256" cy="256" r="180" fill="#FFFFFF" opacity="0.15" />
+  <text x="50%" y="54%" font-size="240" text-anchor="middle" dominant-baseline="central">🥢</text>
+  <text x="50%" y="82%" font-family="system-ui, sans-serif" font-weight="900" font-size="44" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">GOLDEN WOK</text>
+</svg>

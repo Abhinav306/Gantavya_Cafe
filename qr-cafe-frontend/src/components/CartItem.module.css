@@ -1,0 +1,96 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+  box-shadow: var(--shadow-sm);
+}
+
+.info {
+  flex: 1;
+  padding-right: 12px;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unitPrice {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.counterBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.counterBtn:hover {
+  background: #E5E7EB;
+}
+
+.quantity {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0 6px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.subtotal {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  min-width: 65px;
+  text-align: right;
+}
+
+.removeBtn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+}
+
+.removeBtn:hover {
+  color: var(--danger);
+  background: var(--danger-bg);
+}

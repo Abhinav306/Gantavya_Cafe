@@ -1,0 +1,223 @@
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px solid #9CA3AF;
+  transition: all 0.2s ease;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Status-specific card borders */
+.statusPlaced {
+  border-left-color: var(--warning);
+}
+
+.statusPreparing {
+  border-left-color: var(--info);
+}
+
+.statusReady {
+  border-left-color: var(--success);
+}
+
+.statusCompleted {
+  border-left-color: #9CA3AF;
+  opacity: 0.85;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orderNumber {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.tableBadge {
+  background: #FFF0F2;
+  color: var(--primary-dark);
+  border: 1px solid #FFCCD5;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.metaGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.statusBadge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.statusPlaced.statusBadge {
+  background: var(--warning-bg);
+  color: #B45309;
+}
+
+.statusPreparing.statusBadge {
+  background: var(--info-bg);
+  color: #1D4ED8;
+}
+
+.statusReady.statusBadge {
+  background: var(--success-bg);
+  color: #047857;
+}
+
+.statusCompleted.statusBadge {
+  background: #F3F4F6;
+  color: #6B7280;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.itemRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.itemQuantity {
+  font-weight: 800;
+  color: var(--primary);
+  min-width: 22px;
+}
+
+.itemName {
+  flex: 1;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.itemPrice {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.footer {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.totalLabel {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.totalValue {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+}
+
+.actions {
+  display: flex;
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+
+.btnPreparing {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border: 1px solid #BFDBFE;
+}
+
+.btnPreparing:hover {
+  background: #3B82F6;
+  color: white;
+}
+
+.btnReady {
+  background: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+}
+
+.btnReady:hover {
+  background: #10B981;
+  color: white;
+}
+
+.btnCompleted {
+  background: #F3F4F6;
+  color: #4B5563;
+  border: 1px solid #D1D5DB;
+}
+
+.btnCompleted:hover {
+  background: #6B7280;
+  color: white;
+}
+
+.completedTag {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  padding: 6px;
+}
